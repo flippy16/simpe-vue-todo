@@ -10,13 +10,14 @@ const app = new Vue({
     },
     methods: {
         addTodo(){
-            if(todo){
+            if(this.todo.length > 0){
                 this.arrTodo.unshift({
                     title: this.todo,
                     isDone: false
                 });
                 this.todo = '';
             }else{
+                console.log(this.todo.length);
                 this.warnText= 'The field cannot be empty!';
             }
         },
