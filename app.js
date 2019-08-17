@@ -11,6 +11,7 @@ const app = new Vue({
     methods: {
         addTodo(){
             if(this.todo.length > 0){
+                this.warnText= '';
                 this.arrTodo.unshift({
                     title: this.todo,
                     isDone: false

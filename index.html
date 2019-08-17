@@ -38,7 +38,7 @@
             <div style="width:70%;">
                 <form @submit.prevent="addTodo">
                     <input type="text" name="todo" class="form-control" id="todo" v-model="todo" placeholder="Walk the dogs, Wash the car.">
-                    <span class="m-1">{{warnText}}</span>
+                    <span class="m-1 text-center text-warning">{{warnText}}</span>
                     <button type="submit" class="btn btn-primary mt-1 mb-3" style="width:100%;" >Add Todo</button>
                 </form>
                 <div>
